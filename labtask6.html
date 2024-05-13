@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB TASK 6</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        #textHolder, #btn, #gugel #challenge{
+            width: auto;
+            margin: 4px 4px;
+        }
+        .inptBox{
+            display: block;
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 5px;
+        }      
+        #paragraph, #btnClick{
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            padding: 5px;
+        }
+        #google{
+            width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5px;
+        }
+        #sirch{
+            width: 80%;
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            border: 1px solid rgb(172, 163, 163);
+        }
+        .log{
+            width: 91px;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .email{
+            width: 205px;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 7px;
+        }
+        #signupButton{
+            background-color: rgb(70, 70, 255);
+            color: white;
+            font-weight: 600;
+            font-size: small;
+            width: 222px;
+            padding: 9px;
+            border-radius: 7px;
+            border: 0px solid;
+            margin-top: 10px;
+        }
+        .location{
+            background-color: rgba(116, 111, 111, 0.185);
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 0px solid;
+        }
+        #Req{
+            background-color: black;
+            color: white;
+        }
+        #Sched{
+            background-color: rgba(116, 111, 111, 0.185);
+            border: 0px solid;
+
+        }
+        #Req, #Sched{
+            width: 130px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="textHolder"><!--TASK1-->
+        <h3>TEXT BOX</h3>
+        <input type="inptBox" placeholder="Name" class="inptBox"><br>
+        <input type="inptBox" placeholder="Email" class="inptBox">
+    </div>
+
+    <div id="btn"><!--TASK2-->
+        <h3>BUTTON</h3>
+        <div id="paragraph">
+            <p class="survey">Thanks for chatting with our<br>
+            customer support. Would you<br> 
+            like to take our quick survey?
+            </div>
+            <div id="btnClick">
+                <button class="click" onclick="alert('Alert!')">Yes</button>
+                <button class="click" onclick="alert('Alert!')">No</button>
+            </div>
+            </p>
+        </div>
+
+        <div id="gugel"><!--TASK3-->
+            <h3>Google.com</h3>
+            <img src=".//images.png" alt="Google logo" id="google">
+            <div>
+                <input type="text" placeholder="Search Google or type a URL" id="sirch">
+            </div>
+        </div>
+        <div id="challenge">
+            <h3 class="head">Challenge Exercise 8d</h3>
+            <div id="signUp">
+                <input type="text" placeholder="First name" class="log">
+                <input type="text" placeholder="First name" class="log">
+                <div id="eml">
+                    <input type="text" placeholder="Email" class="email">
+                </div>
+                <button id="signupButton" onclick="alert('Thankyou for signing up!')">Sign Up</button>
+            </div>
+        </div>
+
+        <!--challenge-->
+
+        <div id="challenge">
+            <h3 class="head">Challenge Exercise 8e</h3>
+            <div id="reqRide">
+                <h1 class="rrw">Request a ride now</h1>
+                <input type="text" placeholder="Enter pickup location" class="location">
+                <input type="text" placeholder="Enter destination" class="location">
+                <div id="submit">
+                    <button id="Req" onclick="alert('Wait for a moment')">Request Now</button>
+                    <button id="Sched" onclick="alert('Wait for a moment')">Schedule for later</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
